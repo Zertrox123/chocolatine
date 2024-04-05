@@ -56,6 +56,7 @@ char **strtoc(char *buffer, char del)
         j = 0;
         x++;
     }
+    tab[x] = NULL;
     return tab;
 }
 
