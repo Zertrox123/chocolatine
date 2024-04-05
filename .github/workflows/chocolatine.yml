@@ -68,7 +68,7 @@ jobs:
 
   push_to_mirror:
     needs: run_tests
-    if: github.repository == 'EpitechPromo2028/B-DOP-200-LYN-2-1-chocolatine-omar.joudi'
+    if: github.repository == 'Zertrox123/chocolatine.git'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
