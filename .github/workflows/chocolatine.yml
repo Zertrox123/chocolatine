@@ -68,7 +68,7 @@ jobs:
 
   push_to_mirror:
     needs: run_tests
-    if: github.repository == 'Zertrox123/chocolatine.git'
+    if: github.repository == 'Zertrox123/chocolatine'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
