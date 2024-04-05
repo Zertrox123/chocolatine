@@ -28,7 +28,7 @@ jobs:
             ARG2=$(echo $Line | cut -d: -f2); \
             ARG3=$(echo $Line | cut -d: -f3); \
             ARG4=$(echo $Line | cut -d: -f4); \
-            echo "error file=$ARG1, line=$ARG2:: $ARG3 $ARG4"; \
+            echo ":error file=$ARG1, line=$ARG2:: $ARG3 $ARG4"; \
           if [ -s coding-style-reports.log ]; then
             exit 1
           fi
