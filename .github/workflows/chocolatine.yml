@@ -48,7 +48,7 @@ jobs:
       - name: check exe
         run: |
           IFS=',' read -ra LOL <<< "${{ env.EXECUTABLES }}"
-          for value in "${ADDR[@]}"; do
+          for value in "${LOL[@]}"; do
             if [ -e $value ]; then
               exit 0
             else
