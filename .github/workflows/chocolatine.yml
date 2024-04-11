@@ -47,6 +47,7 @@ jobs:
         run: make clean
       - name: check exe
         run: |
+          IFS = ','
           for value in $EXECUTABLES; do
             if [ -e $value ]; then
               exit 0
