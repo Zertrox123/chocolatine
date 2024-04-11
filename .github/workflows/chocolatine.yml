@@ -47,8 +47,8 @@ jobs:
         run: make clean
       - name: check exe
         run: |
-          IFS=','
-          for value in $EXECUTABLES; do
+          IFS=',' read -ra LOL <<< "${{ env.EXECUTABLES }}"
+          for value in "${ADDR[@]}"; do
             if [ -e $value ]; then
               exit 0
             else
